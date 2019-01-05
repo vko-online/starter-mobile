@@ -1,0 +1,9 @@
+mutation login($user: SigninUserInput!) {
+  login(user: $user) {
+    id
+    jwt
+    email
+    avatar_url
+    fullName
+  }
+}

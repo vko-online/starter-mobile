@@ -1,0 +1,8 @@
+query findAllUsers ($text: String) {
+  users (text: $text) {
+    id
+    fullName
+    email
+    avatar_url
+  }
+}

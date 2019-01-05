@@ -1,0 +1,15 @@
+schema:
+  - "http://127.0.0.1:8080/graphql"
+documents:
+  - "./src/graphql/**/*.graphql"
+config: {}
+generates:
+  ./src/types/models.generated.tsx:
+    config: {
+      noNamespaces: false
+    }
+    plugins:
+      - "typescript-common"
+      - "typescript-client"
+      - "typescript-react-apollo"
+require: []

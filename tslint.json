@@ -1,0 +1,12 @@
+{
+  "extends": "tslint-config-standard",
+  "rules": {
+    "variable-name": false
+  },
+  "linterOptions": {
+    "exclude": [
+        "./src/types/models.generated.tsx",
+        "./node_modules"
+    ]
+  }
+} 

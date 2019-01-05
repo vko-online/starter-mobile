@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es2015", "esnext.asynciterable"],
+    "skipLibCheck": true,
+    "allowJs": false,
+    "checkJs": false,
+    "jsx": "react",
+    "outDir": "./dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "rootDir": "./src",
+    "sourceMap": true,
+    "baseUrl": "src",
+    "paths": {
+      "@actions/*": ["actions/*"],
+      "@components": ["components/index"],
+      "@components/*": ["components/*"],
+      "@constants/*": ["constants/*"],
+      "@reducers/*": ["reducers/*"],
+      "@sagas": ["sagas/index"],
+      "@sagas/*": ["sagas/*"],
+      "@screens/*": ["screens/*"],
+      "@types/*": ["types/*"],
+      "@app": ["App"]
+    },
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "index.android.js",
+    "index.ios.js",
+    "build",
+    "node_modules",
+    "__tests__"
+  ]
+}

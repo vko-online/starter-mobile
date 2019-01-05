@@ -1,0 +1,17 @@
+query GetAllCategories($text: String) {
+  categories(text: $text) {
+    edges {
+      cursor
+      node {
+        id
+        name
+        image
+      }
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+    total
+  }
+}
